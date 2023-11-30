@@ -1,6 +1,7 @@
 CREATE TABLE fastms.user (
   email VARCHAR(255) PRIMARY KEY,
   name VARCHAR(255),
+  encoded_password VARCHAR(255) NOT NULL,
   signup_ts TIMESTAMP default CURRENT_TIMESTAMP
 );
 
